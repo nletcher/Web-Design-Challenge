@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Latitude vs. Wind Speed</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="latitude-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="index.html">Latitude</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse justify-content-end" id="navbarColor01">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="lat_v_temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="lat_v_cloudiness.html">Humidity</a>
+              <a class="dropdown-item" href="lat_v_humidity.html">Cloudiness</a>
+              <a class="dropdown-item" href="lat_v_wind.html">Windspeed</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>  
+        </ul>
+        
+      </div>
+    </nav>
+  </div>
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-8">
+        <div class="box visualizations">
+          <h2>Windspeed</h2>
+          <hr />
+          <figure>
+            <img src="Resources/assets/visualizations/lat_wind_2020-09-25.png" class="img-fluid" />
+          </figure>
+          <p>Most of the cities have wind speed below 20mph. South pole and North pole tend to have stronger winds above 20mph.</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <div class="box visualizations">
+          <h2>Visualizations</h2>
+          <hr />
+          <div class="row">
+            <div class="col-sm">
+              <figure class="visualizations-menu">
+                <a href="lat_v_temp.html"><img src="Resources/assets/visualizations/lat_temp_2020-09-25.png" class="img-fluid" /></a>
+              </figure>
+            </div>
+            <div class="col-sm">
+              <figure class="visualizations-menu">
+                <a href="lat_v_humidity.html"><img src="Resources/assets/visualizations/lat_humidity_2020-09-25.png" class="img-fluid" /></a>
+              </figure>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <figure class="visualizations-menu">
+                <a href="lat_v_cloudiness.html"><img src="Resources/assets/visualizations/lat_cloud_2020-09-25.png" class="img-fluid" /></a>
+              </figure>
+            </div>
+            <div class="col-sm visualizations-active">
+              <figure class="visualizations-menu">
+                <a href="lat_v_wind.html"><img src="Resources/assets/visualizations/lat_wind_2020-09-25.png" class="img-fluid" /></a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="card-footer footer-position vis-footer">
+  <div class="container">
+    Created by Sofia Mbega
+  </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
