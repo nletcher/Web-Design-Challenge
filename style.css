@@ -1668,9 +1668,12 @@
  }
  
  .table {
-   width: 100%;
+   width: 90%;
    margin-bottom: 1rem;
    color: #ebebeb;
+   overflow-y:scroll;
+   height:500px;
+   display:block;
  }
  
  .table th,

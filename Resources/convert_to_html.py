@@ -1,11 +1,11 @@
 import pandas as pd 
 
 # Open data file
-weather_df = pd.read_csv("weather_data.csv")
+Tesla_df = pd.read_csv("./Tesla-orig.csv")
 
 print ("Reading data file. Here's the head.")
-print (weather_df.head())
+print (Tesla_df.head())
 
-print ("Saving data file to html")
-weather_df.to_html(buf="weather_data.html", index=False)
-print ("Done.")
+#print ("Saving data file to html")
+#Tesla_df.to_html(buf="Tesla-orig.html", index=False)
+#print ("Done.")
